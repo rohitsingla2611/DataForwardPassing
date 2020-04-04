@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class MainActivity2 extends AppCompatActivity {
 
 
@@ -38,6 +40,8 @@ public class MainActivity2 extends AppCompatActivity {
                 finish();
             }
         });
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
     }
 
 }
